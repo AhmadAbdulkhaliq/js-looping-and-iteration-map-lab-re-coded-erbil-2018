@@ -11,6 +11,6 @@ function nameToAttributes (object){
   return object.map(function(driver){
     let firstName=driver.slice(' ')[0]
     let lastName=driver.slice(' ')[1]
-    return 'firstName:'firstName 'lastName'lastName
+    return {'firstName:'firstName 'lastName'lastName}
   })
 }
