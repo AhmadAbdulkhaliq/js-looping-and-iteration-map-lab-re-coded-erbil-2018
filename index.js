@@ -6,11 +6,11 @@ function lowerCaseDrivers(object){
   })
     
 }
+function nameToAttributes (list) {
+  return list.map(function (driver) {
+    const driverFirst = driver.split(' ')[0];
+    const driverLast = driver.split(' ')[1];
 
-function nameToAttributes (list){
-  return list.map(function(driver){
-    let driverfirstName=driver.slice(' ')[0]
-    let driverlastName=driver.slice(' ')[1]
-    return {firstname: driverlastNamefirstName , lastName: driverlastName}
-  })
+    return { firstName: driverFirst, lastName: driverLast };
+  });
 }
