@@ -11,6 +11,6 @@ function nameToAttributes (object){
   return object.map(function(driver){
     let driverfirstName=driver.slice(' ')[0]
     let driverlastName=driver.slice(' ')[1]
-    return {Fname: driverlastNamefirstName , lName: driverlastName}
+    return {firstname: driverlastNamefirstName , lastName: driverlastName}
   })
 }
