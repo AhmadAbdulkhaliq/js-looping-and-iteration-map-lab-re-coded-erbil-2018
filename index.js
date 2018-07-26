@@ -7,8 +7,8 @@ function lowerCaseDrivers(object){
     
 }
 
-function nameToAttributes (object){
-  return object.map(function(driver){
+function nameToAttributes (list){
+  return list.map(function(driver){
     let driverfirstName=driver.slice(' ')[0]
     let driverlastName=driver.slice(' ')[1]
     return {firstname: driverlastNamefirstName , lastName: driverlastName}
